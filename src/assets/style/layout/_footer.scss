@@ -8,4 +8,35 @@
     padding: 3em 0;
     position: relative;
     text-align: center;
+
+    p {
+	margin: 0;
+
+        a {
+            color: map-get($colors, "bp1");
+            font-size: 1.1em;
+            font-weight: 700;
+
+            &:link, &:visited , &:hover, &:active, &:focus, &:focus:active {
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            &:link {
+
+            }
+            &:visited {
+
+            }
+            &:hover {
+                color: lighten(map-get($colors, "bp1"), 10%);
+            }
+            &:active {
+                color: darken(map-get($colors, "bp1"), 10%);
+            }
+            &:focus {
+                color: lighten(map-get($colors, "bp1"), 10%);
+            }
+	    }
+    }
 }

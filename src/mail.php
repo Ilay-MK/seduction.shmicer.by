@@ -31,7 +31,7 @@
 
  	if (!$error) {
         $recepient = "MiKrob09@gmail.com"; /* "MiKrob09@gmail.com" */
-        $sitename = "krepysh.com";
+        $sitename = "mksed.zae-box.by";
 
         $pagetitle = "Новая заявка с сайта \"$sitename\"";
         $message = "Имя: $name \nТелефон: $phone \nКуда кликнул: $whichService";

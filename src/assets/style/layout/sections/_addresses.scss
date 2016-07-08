@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#addresses {
+    color: map-get($colors, "bs1");
+    padding: 0;
+
+    .address {
+	font-size: 1.5em;
+	line-height: 1.4em;
+
+	@media only screen and (max-width: 767px) {
+	    font-size: 1.3em;
+	    line-height: 1.2em;
+	}
+    }
+}

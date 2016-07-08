@@ -8,10 +8,6 @@ $(function () {
 
 $(document).ready(function () {
 
-    $('body').animate({
-        opacity: 1
-    }, 1000);
-
     // Ajax send mail
     $(".order").submit(function (e) {
         ajax(this);
@@ -117,9 +113,9 @@ $(document).ready(function () {
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
     /* - - - - - - - - - - - - - - - - HEADER - - - - - - - - - - - - - - - - */
 
-    /*$('#header').animate({
+    $('#header').animate({
         opacity: 1
-    }, 1000);*/
+    }, 1000);
 
     setTimeout(function () {
         $('#top').css("opacity", 1).animateCss('fadeInDownBig');
