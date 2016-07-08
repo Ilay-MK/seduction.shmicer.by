@@ -56,7 +56,7 @@ $(document).ready(function () {
         toDoScroll();
     });
 
-    $('.modal-vertical-centered').on('show.bs.modal', centerModal);
+    $('.modal-vertical-centered').on('shown.bs.modal', centerModal);
 
     $(window).on("resize", function () {
         $('.modal-vertical-centered:visible').each(centerModal);
@@ -64,7 +64,6 @@ $(document).ready(function () {
     });
 
     $('#modalOrder').on('show.bs.modal', function (event) {
-        centerModal; /* вертикальное центрирование */
         var button = $(event.relatedTarget); // Button that triggered the modal
         var recipient = button.data('service'); // Extract info from data-* attributes
         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
@@ -75,12 +74,14 @@ $(document).ready(function () {
         $('#whichService').val(recipient);
 
         /*$('#placeInFooter>.form-order').detach().prependTo('#placeInModal');*/  // перемещаем форму из футера в модальное окно
+        $('#placeInHeader>.form-order').detach().prependTo('#placeInModal');  // перемещаем форму из хедера в модальное окно
         /*$('#placeMessageSuccess .form-control-feedback-message-success').detach().prependTo('#formOrder');*/
 
     });
 
     $('#modalOrder').on('hidden.bs.modal', function (event) {
         /*$('#placeInModal>.form-order').detach().prependTo('#placeInFooter');*/  // перемещаем форму из модального окна в футер
+        $('#placeInModal>.form-order').detach().prependTo('#placeInHeader');  // перемещаем форму из модального окна в хеадер
         /*$('#formOrder .form-control-feedback-message-success').detach().prependTo('#placeMessageSuccess');*/
         /*$('#formOrder .form-control-feedback-message-success').removeClass("flex-center");*/
     });
