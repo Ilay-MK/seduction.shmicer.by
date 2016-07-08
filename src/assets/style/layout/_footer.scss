@@ -9,8 +9,16 @@
     position: relative;
     text-align: center;
 
+    [class^="col-"], [class*=" col-"] {
+
+    }
+
+    .left {
+        margin-top: 10px;
+    }
+
     p {
-	margin: 0;
+	    /*margin: 0;*/
 
         a {
             color: map-get($colors, "bp1");
@@ -38,5 +46,9 @@
                 color: lighten(map-get($colors, "bp1"), 10%);
             }
 	    }
+
+        .btn {
+
+        }
     }
 }
