@@ -74,23 +74,4 @@
         }
     }
 
-    .btn {
-        margin: 3em 0 0;
-        min-width: 290px;
-
-        &-main {
-            /*color: #ffd700;*/ /*#daa520*/
-            /*font-size: 1.5em;*/
-            font-size: $fz-button;
-
-	    @media (max-width: 736px) {
-	        margin: 0;
-	    }
-
-            @media only screen and (max-width: 400px) {
-                font-size: 0.95em;
-            }
-        }
-    }
-
 }
