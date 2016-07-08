@@ -69,6 +69,13 @@
                 &:focus {
                     color: lighten(map-get($colors, "bp1"), 10%);
                 }
+
+                span {
+
+                    @media (max-width: 374px) {
+                        display: none;
+                    }
+                }
             }
         }
     }
