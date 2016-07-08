@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.list-primary {
+    list-style: none;
+
+    li {
+        font-size: 1.05em;
+        line-height: 1.3em;
+        margin-bottom: 20px;
+        opacity: 0;
+
+        img, .icon-font {
+            /*float: left;*/
+            left: 0;
+            margin: 0 10px 0 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+        }
+
+        .icon-font {
+            font-size: 1.2em;
+
+            &.fa-stack {
+                width: 1em;
+                height: 1em;
+                line-height: 1em;
+            }
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.6em;
+            font-weight: 700;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        p {
+           font-size: 1.1em;
+        }
+    }
+}
