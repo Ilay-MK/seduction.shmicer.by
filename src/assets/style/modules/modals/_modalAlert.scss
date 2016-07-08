@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 .modalAlert {
-    color: map-get($colors, "suc");
+    /*color: map-get($colors, "suc");*/
+    color: map-get($colors, "bs1");
 
     .modal {
 

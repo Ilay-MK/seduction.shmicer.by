@@ -30,7 +30,7 @@
 	}
 
  	if (!$error) {
-        $recepient = "MiKrob09@gmail.com"; /* "MiKrob09@gmail.com" */
+        $recepient = "jonny8k@mail.ru"; /* "MiKrob09@gmail.com" */
         $sitename = "mksed.zae-box.by";
 
         $pagetitle = "Новая заявка с сайта \"$sitename\"";
